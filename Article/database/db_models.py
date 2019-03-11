@@ -10,8 +10,8 @@ class Users(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String(80), nullable=False)
     last_name = db.Column(db.String(80), nullable=False)
-    email= db.Column(db.String(120), nullable=False)
-    phone= db.Column(db.Integer, nullable=False)
+    email = db.Column(db.String(120), nullable=False)
+    phone = db.Column(db.Integer, nullable=False)
     admin = db.Column(db.Boolean)
 
     articles_id = db.Column(db.Integer, db.ForeignKey('articles.id'))
